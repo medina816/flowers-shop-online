@@ -1,0 +1,75 @@
+.wrapper {
+    width: 1920px;
+    margin: 0 auto;
+}
+.gen {
+    width: 1421px;
+height: 674px;
+display: flex;
+margin: 0 auto;
+gap: 21px;
+}
+.gen-right {
+    position: relative;
+    width: 700px;
+height: 669px;
+}
+.gen-right img {
+    width: 100%;
+}
+.gen-right h1 {
+    position: absolute;
+    top: 0;
+    font-family: Museo Sans Cyrl;
+font-size: 36px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: left;
+width: 412px;
+height: 110px;
+right: 20px;
+}
+.gen-left {
+    width: 700px;
+height: 669px;
+}
+.gen-left {
+    display: flex;
+    width: 700px;
+height: 669px;
+flex-wrap: wrap;
+}
+.gen-left h1 {
+    color: rgb(51, 51, 51);
+font-family: Museo Sans Cyrl;
+font-size: 36px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+}
+.gen-left img {
+    width: 336px;
+height: 321px;
+}
+.block1 {
+    position: relative;
+}
+.block1 h1 {
+    position: absolute;
+    top: 42px;
+    left: 21px;
+}
+.block2 {
+    position: relative;
+}
+.block2 h1 {
+    position: absolute;
+    top: 42px;
+    left: 21px;
+}
+.block4 {
+    position: relative;
+}
+
