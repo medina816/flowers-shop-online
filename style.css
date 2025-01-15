@@ -108,6 +108,67 @@ height: 321px;
 .block4 {
     position: relative;
 }
+.input {
+    line-height: 28px;
+    width: 220px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #956D84;
+   }
+   
+   .input::placeholder {
+    color: #828282;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+.input2 {
+    line-height: 28px;
+    width: 580px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input2:focus, input2:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #956D84;
+   }
+   
+   .input2::placeholder {
+    color: #828282;
+   }
+   
+   .input2:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   
+   
+   
+   
+   
+   
 
 /* ================================ */
 .promotion{
