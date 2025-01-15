@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal Example</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
 </head>
 <body>
     <div class="wrapper">
@@ -14,6 +28,77 @@
                 <div class="gen-right">
                     <img src="./image/image.png" alt="">
                     <h1>Скидки -6% на все букеты по предзаказу на 8 марта</h1>
+    <header class="header"> 
+        <div class="header1">
+            <h3>Валюта  Грн </h3><img src="./svg/Polygon.svg" alt="">
+            <h3>Язык   RU</h3><img src="./svg/Polygon.svg" alt="">
+            <h3>Город   Киев</h3><img src="./svg/Polygon.svg" alt="">
+            <img src="./svg/heart9.svg" alt="">
+            <h3>Закладки</h3>
+            <img src="./svg/truck9.svg" alt="">
+            <h3>Доставка и оплата</h3>
+            <img src="./svg/phone9.svg" alt="">
+            <h3>Контакты</h3>
+            <img src="./svg/person9.svg" alt="">
+            <h3>Вход <img src="./svg/Line9.svg" alt=""> регистрация
+            </h3>
+        </div>
+        <div class="flex items-center gap-[125px] ml-[250px]">
+
+            <div>
+                <img src="./svg/image 11.svg" alt="">
+            </div>
+            <div>
+                <div>
+                    <img src="./svg/Polygon 1 (1).svg" alt="Иконка имени" class="relative  top-[20px] w-[15px]  ">
+                    <input placeholder= "Поиск по категориям " type="text" class="input text-center" >
+                    <input placeholder="Поиск по товарам" type="text" class="input2 ml-[25px]" required="">
+                </div>
+                <div class="mt-[50px]">
+                    <ol class="flex gap-[67px]">
+                        <li class="font-[700] text-[16px] text-[#956D84] flex gap-[5px]">Каталог товаров <img src="./svg/Polygon 1 (1).svg" alt=""></li>
+                        <li class="font-[700] text-[16px] text-[#333333]">Форум</li>
+                        <li class="font-[700] text-[16px] text-[#333333]">Отзывы</li>
+                        <li class="font-[700] text-[16px] text-[#333333]">Акции</li>
+                        <li class="font-[700] text-[16px] text-[#333333]">Новости</li>
+                        <li class="font-[700] text-[16px] text-[#333333] flex gap-[5px] ">Информация <img src="./svg/Polygon 1 (1).svg" alt=""></li>
+                    </ol>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div>
+
+                <div class="flex gap-[12px]">
+                    <img src="./svg/Group 18.svg" alt="">
+                    <img src="./svg/Group 15.svg" alt="">
+                    <img src="./svg/Group 18.svg" alt="">
+                    <img src="./svg/Group 17.svg" alt="">
+                </div>
+                <h1 class="font-[300] text-[16px] text-[#333333] mt-[20px]">+38 (067) 829 30 30</h1>
+                <div class="flex gap-[20px] items-center mt-[22px]">
+
+                    <img src="./svg/Frame 3 (1).svg" alt="">
+                    <img src="./svg/Frame 2 (1).svg" alt="">
+                    <p class="text-[#828282] font-[300] text-[16px]">₴ 1 520</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="gen">
+            <div class="gen-right">
+                <img src="./image/image.png" alt="">
+                <h1>Скидки -6% на все букеты по предзаказу на 8 марта</h1>
+            </div>
+            <div class="gen-left">
+                <div class="block1">
+                    <img src="./image/image2.png" alt="">
+                    <h1>Розы</h1>
+                </div>
+                <div class="block2">
+                    <img src="./image/image3.png" alt="">
+                    <h1>Подарки</h1>
                 </div>
                 <div class="gen-left">
                     <div class="block1">
@@ -48,8 +133,280 @@
         </main>
         <footer class="footer"></footer>
     </div>
+        </div>
+        <section>
+            <div class="w-[1420px] h-[270px] m-auto ">
+                <div class="flex gap-[20px]">
+                    <div class="w-[460px] h-[220px] flex border-[1px] border-[#956D84] ">
+                        <div class="absolute mt-[40px] ml-[20px]"> 
+                            <h1 class="w-[213px] h-[70px] font-[300] text-[24px] text-[#333333]">Фото доставок наших букетов</h1>
+                            <p class="w-[197px] h-[48px] font-[300] text-[14px] text-[##828282] mt-[10px]">Безупречное качество обслуживания и доставка в любую точку города</p>
+
+                        </div>
+                        <div>
+                            <img src="./image/Rectangle 14.png" alt="" class="w-[460px] h-[220px] absolute">
+                            <img src="./image/image 10.png" alt="" class="relative ml-[180px]">
+                        </div>
+                        <img src="./image/photos 1.png" alt="" class=" absolute ml-[320px] mt-[20px]">
+
+                    </div>
+                    <div class="relative w-full max-w-[460px] h-[220px] bg-[#956D84] text-white border border-[#956D84] flex flex-col items-center justify-center overflow-hidden">
+                        <img src="./image/image 10 (2).png" alt="Leaves Left" class="absolute top-0 left-0 h-auto">
+                        <img src="./image/image 11.png" alt="Leaves Right" class="absolute bottom-0 right-0 h-auto">
+                        <img src="./image/video (1) 1.png" alt="Camera Icon" class=" mb-3 z-10">
+                        <h2 class="text-[24px] font-[300] text-white z-10">Видео отчеты клиентов</h2>
+                        <p class="text-sm mt-2 z-10">Наши счастливые клиенты с букетами от Flowers-Ukraine</p>
+                      </div>
+                      
+                    <div class="w-[460px] h-[220px] flex border-[1px] border-[#956D84]">
+                      
+                        <div>
+                            <img src="./image/Rectangle 14 (1).png" alt="" class=" w-[427px] h-[220px] absolute">
+                            <img src="./image/image 10 (1).png" alt="" class="relative ">
+                        </div>
+                        <img src="./image/giftbox (1) 1.png" alt="" class=" absolute mt-[20px] ml-[40px]">
+                        <div class="absolute mt-[40px] "> 
+                            <h1 class="w-[180px] h-[70px] font-[300] text-[24px] text-right ml-[230px]   text-[#333333] ">Подарок каждому клиенту</h1>
+                            
+                            <p class="w-[262px] h-[48px] font-[300] text-[14px] text-right  text-[##828282] mt-[10px] ml-[145px]">К каждому заказу мы прилогаем комплимент от компании 
+                                в виде маленького презента</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+     
+
+<section>
+    <div class="promotion">
+        
+        <h1 class="act">Акции</h1>
+       
+       <div class="card-section">
+        <div class="cards">
+     
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower9.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale91.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower91.png" alt="101 красная роза" class="card-image">
+
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower92.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower93.png" alt="101 красная роза" class="card-image">
+
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower9.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale91.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+
+                <img src="./image/flower91.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima92">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart91.svg" alt="">
+            </div>
+            <div class="glava">
+
+                <img src="./image/flower92.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ</a>
+            </div>
+          </div>
+        
+         
+          <div class="card">
+            <div class="svgima">
+
+                <img src="./svg/sale.svg" alt="">
+                <img src="./svg/heart9.svg" alt="">
+            </div>
+            <div class="glava">
+                <img src="./image/flower93.png" alt="101 красная роза" class="card-image">
+            </div>
+            <div class="top9">
+                <img src="./svg/star9.svg" alt="">
+                <img src="./svg/top9.svg" alt="">
+            </div>
+            <div class="card-content">
+            <div class="old">
+                <h3 class="card-title">101 красная роза</h3>
+                <img src="./svg/old9.svg" alt="">
+            </div>
+             <p>2280 грн</p>
+              <button>Заказать</button>
+              <a href="">быстрый заказ </a>
+            </div>
+          </div>
+        
+         
+        </div>
+       </div>  
+       
+    </div>
+</section>
+<section>
+    <div class="w-[1420px] h-[1350px] m-auto">
+        <h1 class="text-center font-[700] text-[48px] text-[#000000] mb-20">Сезонные</h1>
+            <div id="block4" class="flex flex-wrap gap-[20px]"></div>
+        </div>
+</section>
 
 
+    </main>
+    <footer class="footer"></footer>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
