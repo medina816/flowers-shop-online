@@ -22,14 +22,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header"></header>
-        <main class="main">
-            <section class="gen">
-                <div class="gen-right">
-                    <img src="./image/image.png" alt="">
-                    <h1>Скидки -6% на все букеты по предзаказу на 8 марта</h1>
-    <header class="header"> 
-        <div class="header1">
+        <header class="header">
+            <div class="header1">
             <h3>Валюта  Грн </h3><img src="./svg/Polygon.svg" alt="">
             <h3>Язык   RU</h3><img src="./svg/Polygon.svg" alt="">
             <h3>Город   Киев</h3><img src="./svg/Polygon.svg" alt="">
@@ -100,15 +94,6 @@
                     <img src="./image/image3.png" alt="">
                     <h1>Подарки</h1>
                 </div>
-                <div class="gen-left">
-                    <div class="block1">
-                        <img src="./image/image2.png" alt="">
-                        <h1>Розы</h1>
-                    </div>
-                    <div class="block2">
-                        <img src="./image/image3.png" alt="">
-                        <h1>Подарки</h1>
-                    </div>
                     <div class="block3">
                         <img src="./image/image4.png" alt="">
                     </div>
@@ -116,25 +101,8 @@
                         <img src="./image/image5.png" alt="">
                     </div>
                 </div>
-            </section>
-            <section class="section5">
-                <button onclick="openModal()">Заказать</button>
-            </section>
-            <div class="modal-overlay" id="modal">
-                <div class="modal">
-                    <h2>Введите ваши данные</h2>
-                    <input type="email" id="email" placeholder="Введите ваш email" required>
-                    <input type="text" id="address" placeholder="Введите ваш адрес" required>
-                    <input type="tel" id="phone" placeholder="Введите ваш номер" required>
-                    <button class="submit" onclick="submitOrder()">Отправить</button>
-                    <button class="cancel" onclick="closeModal()">Отмена</button>
                 </div>
-            </div>
-        </main>
-        <footer class="footer"></footer>
-    </div>
-        </div>
-        <section>
+            </section>
             <div class="w-[1420px] h-[270px] m-auto ">
                 <div class="flex gap-[20px]">
                     <div class="w-[460px] h-[220px] flex border-[1px] border-[#956D84] ">
@@ -177,7 +145,23 @@
 
             </div>
         </section>
-     
+        <section class="section5">
+            <button onclick="openModal()">Заказать</button>
+        </section>
+        <div class="modal-overlay" id="modal">
+            <div class="modal">
+                <h2>Введите ваши данные</h2>
+                <input type="email" id="email" placeholder="Введите ваш email" required>
+                <input type="text" id="address" placeholder="Введите ваш адрес" required>
+                <input type="tel" id="phone" placeholder="Введите ваш номер" required>
+                <button class="submit" onclick="submitOrder()">Отправить</button>
+                <button class="cancel" onclick="closeModal()">Отмена</button>
+            </div>
+        </div>
+    <!-- </main> -->
+
+    <!-- </div> -->
+    <section>
 
 <section>
     <div class="promotion">
