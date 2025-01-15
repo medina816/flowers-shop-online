@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modal Example</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,12 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <section class="gen">
+                <div class="gen-right">
+                    <img src="./image/image.png" alt="">
+                    <h1>Скидки -6% на все букеты по предзаказу на 8 марта</h1>
     <header class="header"> 
         <div class="header1">
             <h3>Валюта  Грн </h3><img src="./svg/Polygon.svg" alt="">
@@ -94,13 +100,39 @@
                     <img src="./image/image3.png" alt="">
                     <h1>Подарки</h1>
                 </div>
-                <div class="block3">
-                    <img src="./image/image4.png" alt="">
+                <div class="gen-left">
+                    <div class="block1">
+                        <img src="./image/image2.png" alt="">
+                        <h1>Розы</h1>
+                    </div>
+                    <div class="block2">
+                        <img src="./image/image3.png" alt="">
+                        <h1>Подарки</h1>
+                    </div>
+                    <div class="block3">
+                        <img src="./image/image4.png" alt="">
+                    </div>
+                    <div class="block4">
+                        <img src="./image/image5.png" alt="">
+                    </div>
                 </div>
-                <div class="block4">
-                    <img src="./image/image5.png" alt="">
+            </section>
+            <section class="section5">
+                <button onclick="openModal()">Заказать</button>
+            </section>
+            <div class="modal-overlay" id="modal">
+                <div class="modal">
+                    <h2>Введите ваши данные</h2>
+                    <input type="email" id="email" placeholder="Введите ваш email" required>
+                    <input type="text" id="address" placeholder="Введите ваш адрес" required>
+                    <input type="tel" id="phone" placeholder="Введите ваш номер" required>
+                    <button class="submit" onclick="submitOrder()">Отправить</button>
+                    <button class="cancel" onclick="closeModal()">Отмена</button>
                 </div>
             </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
         </div>
         <section>
             <div class="w-[1420px] h-[270px] m-auto ">
