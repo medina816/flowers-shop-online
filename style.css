@@ -109,3 +109,125 @@ height: 321px;
     position: relative;
 }
 
+/* ================================ */
+.promotion{
+    width: 1420px;
+    height: 1236px;
+   
+    margin: 0 auto;
+
+}
+.svgima92 img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+    h1{
+font-family:Montserrat;
+font-size: 48px;
+font-weight: 700;
+line-height: 18px;
+text-align: center;
+color: #333333;
+
+    }
+.svgima{
+    width: 50px;
+    height: 50x;
+    display: flex;
+    gap: 220px;
+    position: absolute;
+}
+.top9{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.old{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.card-content p{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 900;
+line-height: 18px;
+text-align: left;
+color: #956D84;
+display: flex;
+align-items: end;
+justify-content: end;
+}
+
+.card-title {
+    width: 114px;
+    height: 27px;
+    font-family:Montserrat ;
+font-size: 18px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+color: #333333;
+
+}
+
+.cards{
+   
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 10px;
+}
+.card{
+    width: 340px;
+    height: 594px;
+    border: 1px solid #956d8491;
+    padding: 20px;
+
+}
+.card button{
+    width: 220px;
+    height: 65px;
+    background-color: #956D84;
+    border-radius: 7px;
+    border: none;
+    color: #FFFFFF;
+    font-family:Montserrat ;
+font-size: 16px;
+font-weight: 700;
+line-height: 18px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+margin-left: 30px;
+
+    
+}
+
+.glava{
+    width: 272px;
+height: 340px;
+
+}
+
+.card a{
+    color: #828282;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Montserrat ;
+    font-weight: 500;
+}
