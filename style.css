@@ -2,6 +2,42 @@
     width: 1920px;
     margin: 0 auto;
 }
+
+header{
+    width: 1920px;
+    height: 198.16px;
+    border: 1px solid #333333;
+    
+}
+
+.header1{
+    width: 1920px;
+    height: 50px;
+    background-color: #333333;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.header1 h3{
+    font-family:Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+
+
+}
+.header1 img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
 .gen {
     width: 1421px;
 height: 674px;
