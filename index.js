@@ -1,133 +1,94 @@
 
 let section5 = document.querySelector(".section5");
 
-let load = [
-    {
-        id: 1,
-        image: "./image/image6.png",
-        sign: "./svg/heart.svg",
-        text:"Торт Наполеон",
-        price:"2280 грн"
-    },
-    {
-        id: 2,
-        image: "./image/image7.png",
-        sign: "./svg/heart.svg",
-        text:"Киевский торт",
-        price:"1680 грн"
-    },
-    {
-        id: 3,
-        image: "./image/image8.png",
-        sign: "./svg/heart.svg",
-        text:"Торт Левантинер",
-        price:"1270 грн"
-    },
-    {
-        id: 4,
-        image: "./image/image9.png",
-        sign: "./svg/heart.svg",
-         text:"Торт на день рождения",
-        price:"2020 грн"
-    },
-    {
-        id: 5,
-        image: "./image/image6.png",
-        sign: "./svg/heart.svg",
-      text:"Торт Наполеон",
-        price:"2280 грн"
-    },
-    {
-        id: 6,
-        image: "./image/image7.png",
-        sign: "./svg/heart.svg",
-        text:"Киевский торт",
-        price:"1680 грн"
-    },
-    {
-        id: 7,
-        image: "./image/image8.png",
-        sign: "./svg/heart.svg",
-        text:"Торт Левантинер",
-        price:"1270 грн"
-    },
-    {
-        id: 8,
-        image: "./image/image9.png",
-        sign: "./svg/heart.svg",
-        text:"Торт на день рождения",
-        price:"2020 грн"
-    },
+
+
+function generateCards(containerSelector, data, type) {
+    const container = document.querySelector(containerSelector);
+
+    container.innerHTML = data.map(item => {
+        return `
+            <div class="card">
+                <div class="card-in">
+                    <img src="${item.image}" alt="${item.title || 'Изображение'}" loading="lazy">
+                    ${item.tag ? `<div class="tag">${item.tag}</div>` : ''}
+                    <div class="heart">
+                    <img src="${item.heartIcon || './svg/heart.svg'}" alt="Сердце">
+                    </div>
+                   
+                </div>
+                <div class="card-bottom">
+                    ${item.rating ? `<div class="stars-container">${'⭐'.repeat(item.rating)}</div>` : ''}
+                    <div class="text">
+                        <p>${item.text || item.title}</p>
+                        <h3>${item.price} ${item.currency || 'грн'}</h3>
+                    </div>
+                    <button class="order-btn">${item.buttonText || 'Заказать'}
+                        ${item.patternImage ? `<img src="${item.patternImage}" alt="Узор">` : ''}
+                    </button>
+                    ${type === 'flowers' ? `<button class="quick-order">${item.quickOrderText || 'Быстрый заказ'}</button>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+const cakesData = [
+    { id: 1, image: './image/image6.png', text: 'Торт Наполеон', price: '2280 грн' },
+    { id: 2, image: './image/image7.png', text: 'Киевский торт', price: '1680 грн' },
+    { id: 3, image: './image/image8.png', text: 'Торт Левантинер', price: '1270 грн' },
+    { id: 4, image: './image/image9.png', text: 'Торт на день рождения', price: '2020 грн' },
+    { id: 5, image: './image/image6.png', text: 'Торт на день рождения', price: '2020 грн' },
+    { id: 6, image: './image/image7.png', text: 'Торт на день рождения', price: '2020 грн' },
+    { id: 7, image: './image/image8.png', text: 'Торт Левантинер', price: '1270 грн' },
+    { id: 8, image: './image/image9.png', text: 'Торт на день рождения', price: '2020 грн' },
 ];
 
-section5.innerHTML = load.map((item) => {
-    return `
-        <div class="card">
-            <div class="card-in">
-                <img src="${item.image}" alt="Item ${item.id}">
-                <div class="heart">
-                    <img src="${item.sign}" />
-                </div>
-                <button>Top</button>
-            </div>
-            <div class="card-bottom">
-                <div class="stars-container"></div>
-                <div class="text">
-                    <p>${item.text}</p>
-                    <h3>${item.price}</h3>
-                </div>
-                <button class="order-btn">Заказать
-                    <img src="./image/image10.png" />
-                </button>
-            </div>
-        </div>`;
-}).join("");
+const flowersData = [
+    { 
+        id: 1, title: 'Мечтательница', price: 2280, currency: 'грн', rating: 5, 
+        image: './image/image18.png', tag: 'ТОП', buttonText: 'Заказать', quickOrderText: 'Быстрый заказ', 
+        heartIcon: './image/heart.svg', patternImage: './image/image10.png'
+    },
+    
+];
 
-document.addEventListener("DOMContentLoaded", () => {
-    const starsContainers = document.querySelectorAll(".stars-container");
-    const starCount = 5;
+generateCards('.section5', cakesData, 'cakes');
+generateCards('#block4', flowersData, 'flowers');
 
-    starsContainers.forEach((container) => {
-        for (let i = 0; i < starCount; i++) {
-            const img = document.createElement("img");
-            img.src = "./svg/star.svg"; 
-            img.alt = "Star";
-            container.appendChild(img);
-        }
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal');
+    const email = document.getElementById('email');
+    const address = document.getElementById('address');
+    const phone = document.getElementById('phone');
 
     function openModal() {
-        const modal = document.getElementById("modal");
-        modal.style.display = "flex"; 
+        modal.style.display = 'flex';
     }
 
     function closeModal() {
-        const modal = document.getElementById("modal");
-        modal.style.display = "none";
+        modal.style.display = 'none';
     }
-    function submitOrder() {
-        const email = document.getElementById("email");
-        const address = document.getElementById("address");
-        const phone = document.getElementById("phone");
 
+    function submitOrder() {
         if (email.value && address.value && phone.value) {
             alert(`Заказ отправлен!\nEmail: ${email.value}\nАдрес: ${address.value}\nТелефон: ${phone.value}`);
-            email.value = "";
-            address.value = "";
-            phone.value = "";
+            email.value = '';
+            address.value = '';
+            phone.value = '';
             closeModal();
         } else {
-            alert("Пожалуйста, заполните все поля.");
+            alert('Пожалуйста, заполните все поля.');
         }
     }
 
-    const orderButtons = document.querySelectorAll(".order-btn");
-    orderButtons.forEach((button) => {
-        button.addEventListener("click", openModal);
+    document.querySelectorAll('.order-btn').forEach(button => {
+        button.addEventListener('click', openModal);
     });
-    document.querySelector(".submit").addEventListener("click", submitOrder);
-    document.querySelector(".cancel").addEventListener("click", closeModal);
+    document.querySelector('.submit').addEventListener('click', submitOrder);
+    document.querySelector('.cancel').addEventListener('click', closeModal);
 });
+
 const flowersCard = [
     {
       id: 1,
