@@ -1,7 +1,7 @@
+
 .wrapper {
     width: 1920px;
     margin: 0 auto;
-    border: 10px solid red;
 }
 
 header{
@@ -111,16 +111,17 @@ height: 321px;
 }
 
 .section5 {
-    width: 1420px;
+    width: 1520px;
 height: 1234px;
 border: 2px solid red;
 margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
+position: relative;
 }
 .card-in {
-    width: 330px;
+    width: 270px;
 height: 305px; 
 background: rgb(251, 249, 250);
 display: flex;
@@ -132,26 +133,12 @@ position: relative;
     width: 283px;
     height: 208px;
 }
-.card-in button {
-    width: 56px;
-height: 56px;
-border-radius: 50%;
-position: absolute;
-right: 14px;
-bottom: 27px;
-background: rgba(157, 117, 140, 0.39);
-color: rgb(149, 109, 132);
-font-family: Euclid Circular B;
-font-size: 16px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0%;
-text-align: center;
-}
+
+  
 .card {
     border: 2px solid black;
     width: 330px;
-height: 544px;
+height: 444px;
 margin: 0 auto;
 position: relative;
 }
@@ -159,8 +146,8 @@ position: relative;
     width: 33px;
 height: 29.36px;
 position: absolute;
-top: 46px;
-right: 25px ;
+top: 36px;
+right: 15px ;
 }
 .stars-container {
     margin-top: 16px;
@@ -470,4 +457,61 @@ height: 340px;
     font-family:Montserrat ;
     font-weight: 500;
 }
+.section99 {
+    width: 1420px;
+height: 508px;
+margin: 0 auto;
+position: relative;
+display: flex;
+}
+.section99 img {
+    width: 1420px;
+height: 508px;
+}
 
+.loc img {
+    width: 49px;
+    height: 70px;
+    position: absolute;
+    bottom: 215px ;
+    left: 587px;
+}
+.list img {
+    position: absolute;
+    right: 219px;
+    width: 380px;
+height: 508px;
+}
+.title img {
+    width: 106px;
+height: 107px;
+position: absolute;
+top: 25px;
+right: 357px;
+}
+.phone {
+    width: 148px;
+height: 83px;
+position: absolute;
+right: 321px;
+top: 204px;
+}
+.phone-in {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.phone-in h5 {
+    /* descriptions */
+color: rgb(130, 130, 130);
+font-family: Euclid Circular B;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+}
+.phone-in img {
+    width: 18.04px;
+height: 18px;
+}
