@@ -231,3 +231,46 @@ height: 340px;
     font-family:Montserrat ;
     font-weight: 500;
 }
+
+
+footer{
+    background-color: #333333;
+    width: 1920px;
+    height: 358px;
+
+
+}
+footer h1{
+color: #FFFFFF;
+
+font-size: 18px;
+font-weight: 700;
+line-height: 18px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+}
+footer h3{
+color: #FFFFFF;
+
+}
+.footer1{
+    display: flex;
+    padding: 50px;
+    gap: 100px;
+}
+.footerdow {
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    gap: 30px;
+    padding: 50px;
+  
+}
+
+.footerdow h2{
+    color: #FFFFFF;
+}
